@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class ManavTutarHesaplama {
+    public static void main(String[] args) {
+        float armutfiyat = 25.4f, elmafiyat = 20.5f, domatesfiyat = 22.4f, muzfiyat = 25.3f, patlicanfiyat = 17.6f;
+        float armutkg,elmakg,domateskg,muzkg,patlicankg;
+        float toplamtutar;
+
+        Scanner girdi = new Scanner(System.in);
+
+        System.out.println("Toplam Tutarı Görmek İçin Kilogramları giriniz");
+
+        System.out.print("Armut kg :");
+        armutkg = girdi.nextFloat();
+
+        System.out.print("Elma kg :");
+        elmakg = girdi.nextFloat();
+
+        System.out.print("Domates kg :");
+        domateskg = girdi.nextFloat();
+
+        System.out.print("Muz kg :");
+        muzkg = girdi.nextFloat();
+
+        System.out.print("Patlıcan kg :");
+        patlicankg = girdi.nextFloat();
+
+        toplamtutar = armutfiyat*armutkg+elmafiyat*elmakg+domatesfiyat*domateskg+muzfiyat*muzkg+patlicanfiyat*patlicankg;
+
+
+        System.out.printf("Toplam ödenecek tutar :" + toplamtutar +"₺");
+
+
+    }
+}
